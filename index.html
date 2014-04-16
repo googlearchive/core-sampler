@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Core Elements Sampler</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <script src="components/platform/platform.js"></script>
+    
+    <link rel="import" href="components/sampler-scaffold/sampler-scaffold.html">
+    
+    <link rel="import" href="components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="components/core-menu/core-menu.html">
+    <link rel="import" href="components/core-menu/core-submenu.html">
+    <link rel="import" href="components/core-item/core-item.html">
+    <link rel="import" href="components/core-icon-button/core-icon-button.html">
+    <link rel="import" href="components/core-input/core-input.html">
+
+    <style>
+
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial;
+        color: #333;
+        margin: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-touch-callout: none;
+      }
+
+      section {
+        padding: 30px;
+        min-height: 300px;
+      }
+      
+      .sub-section {
+        padding: 10px 4px;
+      }
+      
+      [theme=core-dark-theme] {
+        background-color: #333;
+      }
+      
+      core-toolbar {
+        background-color: #4F7DC9;
+        color: #fff;
+      }
+
+    </style>
+
+  </head>
+
+  <body unresolved>
+
+    <sampler-scaffold label="Core Elements" theme="core-light-theme">
+
+      <section label="Icon">
+        <div class="sub-section">
+          <template class="icons-template" repeat="{{}}">
+            <core-icon icon="{{}}"></core-icon>
+          </template>
+        </div>
+        <div class="sub-section" theme="core-dark-theme">
+          <template class="icons-template" repeat="{{}}">
+            <core-icon icon="{{}}"></core-icon>
+          </template>
+        </div>
+      </section>
+      
+      <section label="Icon Button">
+        <div class="sub-section">
+          <template class="icons-template" repeat="{{}}">
+            <core-icon-button icon="{{}}"></core-icon-button>
+          </template>
+        </div>
+        <div class="sub-section" theme="core-dark-theme">
+          <template class="icons-template" repeat="{{}}">
+            <core-icon-button icon="{{}}"></core-icon-button>
+          </template>
+        </div>
+      </section>
+
+      <section label="Item">
+        <template class="icons-template" repeat="{{}}">
+          <core-item icon="{{}}" label="{{}}"></core-item>
+        </template>
+      </section>
+      
+      <section label="Input">
+        <h3>Input:</h3>
+        <core-input placeholder="Type something..."></core-input>
+        <br><br><br>
+        <h3>Multiline Input:</h3>
+        <core-input multiline rows="3" placeholder="Type many lines here..."></core-input>
+      </section>
+      
+      <section label="Menu">
+        <div class="sub-section">
+          <core-menu selected="0">
+            <core-item icon="settings" label="Settings"></core-item>
+            <core-item icon="favorite" label="Favorite"></core-item>
+            <core-item icon="account" label="Account"></core-item>
+            <core-item icon="briefcase" label="Briefcase"></core-item>
+          </core-menu>
+        </div>
+        <div class="sub-section" theme="core-dark-theme">
+          <core-menu selected="0">
+            <core-item icon="settings" label="Settings"></core-item>
+            <core-item icon="favorite" label="Favorite"></core-item>
+            <core-item icon="account" label="Account"></core-item>
+            <core-item icon="briefcase" label="Briefcase"></core-item>
+          </core-menu>
+        </div>
+      </section>
+      
+      <section label="SubMenu">
+        <div class="sub-section">
+          <core-menu selected="0">
+            <core-submenu icon="settings" label="Topics">
+              <core-item label="Topic 1"></core-item>
+              <core-item label="Topic 2"></core-item>
+            </core-submenu>
+            <core-submenu icon="settings" label="Favorites">
+              <core-item label="Favorite 1"></core-item>
+              <core-item label="Favorite 2"></core-item>
+              <core-item label="Favorite 3"></core-item>
+            </core-submenu>
+          </core-menu>
+        </div>
+        <div class="sub-section" theme="core-dark-theme">
+          <core-menu selected="0">
+            <core-submenu icon="settings" label="Topics">
+              <core-item label="Topic 1"></core-item>
+              <core-item label="Topic 2"></core-item>
+            </core-submenu>
+            <core-submenu icon="settings" label="Favorites">
+              <core-item label="Favorite 1"></core-item>
+              <core-item label="Favorite 2"></core-item>
+              <core-item label="Favorite 3"></core-item>
+            </core-submenu>
+          </core-menu>
+        </div>
+      </section>
+
+      <section label="Toolbar">
+        <core-toolbar>
+          <core-icon-button icon="menu"></core-icon-button>
+          <span core-flex>Title</span>
+          <core-icon-button icon="trash"></core-icon-button>
+          <core-icon-button icon="search"></core-icon-button>
+        </core-toolbar>
+      
+        <br>
+      
+        <core-toolbar theme="core-dark-theme">
+          <core-icon-button icon="menu"></core-icon-button>
+          <span core-flex>Title</span>
+          <core-icon-button icon="trash"></core-icon-button>
+          <core-icon-button icon="search"></core-icon-button>
+        </core-toolbar>
+      </section>
+
+      <section label="Toolbar (Tall)">
+        <core-toolbar class="tall">
+          <core-icon-button icon="menu"></core-icon-button>
+          <div core-flex></div>
+          <core-icon-button icon="trash"></core-icon-button>
+          <core-icon-button icon="search"></core-icon-button>
+          <div class="bottom indent" core-flex>Title</div>
+        </core-toolbar>
+        
+        <br>
+        
+        <core-toolbar class="tall">
+          <core-icon-button icon="menu"></core-icon-button>
+          <div core-flex></div>
+          <core-icon-button icon="trash"></core-icon-button>
+          <core-icon-button icon="search"></core-icon-button>
+          <div core-flex class="middle indent">Main Title</div>
+          <div core-flex class="bottom indent" style="color: #ccc; font-size: 16px;">Some description...</div>
+        </core-toolbar>
+      </section>
+          
+    </sampler-scaffold>
+    
+    <script>
+    
+      document.addEventListener('polymer-ready', function() {
+        
+        // generate icons
+        var icons = Object.keys(document.createElement('core-icon').getIconset().iconMap);
+        var plates = document.querySelectorAll('.icons-template');
+        for (var i = 0, p; p=plates[i]; i++) {
+          p.model = icons;
+        }
+      });
+
+    </script>
+
+  </body>
+
+</html>
