@@ -17,15 +17,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <script src="components/platform/platform.js"></script>
     
-    <link rel="import" href="components/sampler-scaffold/sampler-scaffold.html">
-    
+    <link rel="import" href="components/core-icon/core-icon.html">
     <link rel="import" href="components/core-toolbar/core-toolbar.html">
     <link rel="import" href="components/core-menu/core-menu.html">
     <link rel="import" href="components/core-menu/core-submenu.html">
     <link rel="import" href="components/core-item/core-item.html">
     <link rel="import" href="components/core-icon-button/core-icon-button.html">
     <link rel="import" href="components/core-input/core-input.html">
+    <link rel="import" href="components/core-tooltip/core-tooltip.html">
 
+    <link rel="import" href="components/sampler-scaffold/sampler-scaffold.html">
+    
     <style>
 
       body {
@@ -191,6 +193,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <div core-flex class="middle indent">Main Title</div>
           <div core-flex class="bottom indent" style="color: #ccc; font-size: 16px;">Some description...</div>
         </core-toolbar>
+      </section>
+      
+      <section label="Tooltip">
+        <core-tooltip label='position="left"' position="left">
+          <core-icon-button icon="account"></core-icon-button>
+        </core-tooltip>
+        <core-tooltip label='position="top"' position="top">
+          <core-icon-button icon="account"></core-icon-button>
+        </core-tooltip>
+        <core-tooltip label='position="bottom"' position="bottom">
+          <core-icon-button icon="account"></core-icon-button>
+        </core-tooltip>
+        <core-tooltip label='position="right"' position="right">
+          <core-icon-button icon="account"></core-icon-button>
+        </core-tooltip>
       </section>
           
     </sampler-scaffold>
