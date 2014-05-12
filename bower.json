@@ -2,8 +2,9 @@
   "name": "core-sampler",
   "private": true,
   "dependencies": {
-    "platform": "Polymer/platform#master",
-    "core-elements": "Polymer/core-elements#master",
-    "sampler-scaffold": "Polymer/sampler-scaffold#master"
-  }
+    "platform": "Polymer/platform#0.2.4",
+    "core-elements": "Polymer/core-elements#0.2.4",
+    "sampler-scaffold": "Polymer/sampler-scaffold#0.2.4"
+  },
+  "version": "0.2.4"
 }
