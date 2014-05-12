@@ -8,74 +8,68 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS
 -->
 <html>
-  <head>
-    <title>Core Elements Sampler</title>
+<head>
+  <title>Core Elements Sampler</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
-    <script src="components/platform/platform.js"></script>
+  <script src="components/platform/platform.js"></script>
+  
+  <link rel="import" href="components/sampler-scaffold/sampler-scaffold.html">
+  <link rel="import" href="components/core-item/core-item.html">
+  
+  <style>
+
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial;
+      color: #333;
+      margin: 0;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-touch-callout: none;
+    }
+
+  </style>
+
+</head>
+<body unresolved>
+
+  <sampler-scaffold label="Core Elements" theme="core-light-theme">
+
+    <core-item label="Icon" tag="core-icon" url="components/core-icon/demo.html" src="code.png"></core-item>
     
-    <link rel="import" href="components/sampler-scaffold/sampler-scaffold.html">
-    <link rel="import" href="components/sampler-scaffold/sampler-section.html">
+    <core-item label="Icon Button" tag="core-icon-button" url="components/core-icon-button/demo.html" src="code.png"></core-item>
+
+    <core-item label="Item" tag="core-item" url="components/core-item/demo.html" src="code.png"></core-item>
     
-    <style>
-
-      body {
-        font-family: 'Helvetica Neue', Helvetica, Arial;
-        color: #333;
-        margin: 0;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        -webkit-tap-highlight-color: rgba(0,0,0,0);
-        -webkit-touch-callout: none;
-      }
-
-      sampler-section {
-        min-width: 300px;
-      }
-
-    </style>
-
-  </head>
-
-  <body unresolved>
-
-    <sampler-scaffold label="Core Elements" theme="core-light-theme">
-
-      <sampler-section label="Icon" tag="core-icon" src="components/core-icon/demo.html"></sampler-section>
-      
-      <sampler-section label="Icon Button" tag="core-icon-button" src="components/core-icon-button/demo.html"></sampler-section>
-
-      <sampler-section label="Item" tag="core-item" src="components/core-item/demo.html"></sampler-section>
-      
-      <sampler-section label="Input" tag="core-input" src="components/core-input/demo.html"></sampler-section>
-      
-      <sampler-section label="Menu" tag="core-menu" src="components/core-menu/demo.html"></sampler-section>
-      
-      <sampler-section label="Toolbar" tag="core-toolbar" src="demos/core-toolbar.html"></sampler-section>
-      
-      <sampler-section label="Tooltip" tag="core-tooltip" src="components/core-tooltip/demo.html"></sampler-section>
-      
-      <sampler-section label="Field" tag="core-field" src="components/core-field/demo.html"></sampler-section>
-      
-      <sampler-section label="List" tag="core-list" src="components/core-list/demo.html"></sampler-section>
-      
-      <sampler-section label="Menu Button" tag="core-menu-button" src="components/core-menu-button/demo.html"></sampler-section>
-      
-      <sampler-section label="Overlay" tag="core-overlay" src="components/core-overlay/demo.html"></sampler-section>
-      
-      <sampler-section label="Pages" tag="core-pages" src="components/core-pages/demo.html"></sampler-section>
-      
-      <sampler-section label="Range" tag="core-range" src="components/core-range/demo.html"></sampler-section>
-      
-      <sampler-section label="Selector" tag="core-selector" src="components/core-selector/demo.html"></sampler-section>
-          
-    </sampler-scaffold>
+    <core-item label="Input" tag="core-input" url="components/core-input/demo.html" src="code.png"></core-item>
     
-  </body>
-
+    <core-item label="Menu" tag="core-menu" url="components/core-menu/demo.html" src="code.png"></core-item>
+    
+    <core-item label="Toolbar" tag="core-toolbar" url="components/core-toolbar/demo.html" src="code.png"></core-item>
+    
+    <core-item label="Tooltip" tag="core-tooltip" url="components/core-tooltip/demo.html" src="code.png"></core-item>
+    
+    <core-item label="Field" tag="core-field" url="components/core-field/demo.html" src="code.png"></core-item>
+    
+    <core-item label="List" tag="core-list" url="components/core-list/demo.html" src="code.png"></core-item>
+    
+    <core-item label="Menu Button" tag="core-menu-button" url="components/core-menu-button/demo.html" src="code.png"></core-item>
+    
+    <core-item label="Overlay" tag="core-overlay" url="components/core-overlay/demo.html" src="code.png"></core-item>
+    
+    <core-item label="Pages" tag="core-pages" url="components/core-pages/demo.html" src="code.png"></core-item>
+    
+    <core-item label="Range" tag="core-range" url="components/core-range/demo.html" src="code.png"></core-item>
+    
+    <core-item label="Selector" tag="core-selector" url="components/core-selector/demo.html" src="code.png"></core-item>
+        
+  </sampler-scaffold>
+  
+</body>
 </html>
